@@ -1,0 +1,74 @@
+// #Loading{
+//   width: 1.2rem;
+//   height: 1.2rem;
+//   color: #fff;
+//   background: transparent;
+//   position: relative;
+//   .point {
+//     width: .5rem;
+//     height: .5rem;
+//     text-align: center;
+//     animation: scale 1.5s infinite linear;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     span{
+//       width: 12px;
+//       height: 12px;
+//       border-radius: 50%;
+//       background: #53ccc6;
+//       transform: scale(0.5);
+//       display: inline-block;
+//     }
+//   }
+// }
+// @for $i from 1 through 5 {
+//   .point:nth-child(#{i}) {
+//     animation-delay: 0.3s * #{$i - 1};
+//   }
+// }
+
+// @keyframes scale{
+//   form {
+//     transform: rotate(0)
+//   }
+//   to{
+//     transform: rotate(360deg)
+//   }
+// }
+
+#Loading{
+  width: 0.7rem;
+  height: 0.7rem;
+  text-align: center;
+  .rotate{
+    position: absolute;
+    width: 0.5rem;
+    height: 0.5rem;
+    border: .04rem solid #ccc;
+    left: 50%;
+    top: 50%;
+    margin-left: -0.25rem; 
+    margin-top: -0.25rem; 
+    border-radius:50%; 
+    border-left-color: rgba($color: #ccc, $alpha: 0.2);
+    border-top-color: rgba($color: #ccc, $alpha: 0.2);
+    animation: rotate 1.5s infinite linear;
+    box-sizing: border-box;
+  }
+  img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@keyframes rotate{
+  form {
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}

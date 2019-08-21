@@ -1,0 +1,79 @@
+// 色值
+$blue: blue;
+$green: #60B55F;
+
+*{
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: .14rem;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+p{
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+.bodycontent {
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+}
+.container{
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+input, button{
+  outline: none;
+}
+.button{
+  font-size: .14rem;
+  border-width: .01rem;
+  border-style: solid; 
+}
+.text_green{
+  color: $green;
+}
+.flex{
+  display: flex;
+  align-items: center;
+}
+.flex-1{
+  flex: 1
+}
+.blockcenter{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+.blackmark{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 800;
+}
+.formErr{
+  color: #f25150;
+  font-size: .12rem;
+  transform: scale(0.9);
+  display: block;
+  transform-origin: top left;
+}
+

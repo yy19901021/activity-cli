@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "lib": ["dom", "es2017.object", "es5", "es2015.promise", "es2015.core", "scripthost"]
+  }
+}
